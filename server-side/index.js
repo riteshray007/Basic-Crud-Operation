@@ -63,7 +63,6 @@ const queryText = `
   SET ${setClause}
   WHERE employeeid = $${columns.length + 1}
 `;
-
 values.push(id);
 
 pool.query(queryText, values, (err, result) => {
